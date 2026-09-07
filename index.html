@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devara Sai Ganesh | Data Analyst & ML Associate</title>
   <meta name="description" content="Portfolio and resume of Devara Sai Ganesh, Data Analyst and ML Associate.">
+
   <style>
     :root {
       --bg: #f6f8fc;
@@ -19,9 +20,13 @@
       --shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -31,7 +36,10 @@
       line-height: 1.6;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .container {
       width: min(1100px, calc(100% - 32px));
@@ -98,14 +106,18 @@
       color: #1d4ed8;
     }
 
-    .btn-primary:hover { background: #dbeafe; }
+    .btn-primary:hover {
+      background: #dbeafe;
+    }
 
     .btn-outline {
       border: 1px solid #93c5fd;
       color: white;
     }
 
-    .btn-outline:hover { background: rgba(255,255,255,0.12); }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+    }
 
     .profile-box {
       min-width: 190px;
@@ -123,9 +135,13 @@
       margin-bottom: 8px;
     }
 
-    main { padding: 45px 0; }
+    main {
+      padding: 45px 0;
+    }
 
-    section { margin-bottom: 50px; }
+    section {
+      margin-bottom: 50px;
+    }
 
     .section-title {
       margin: 0 0 22px;
@@ -150,7 +166,10 @@
       box-shadow: var(--shadow);
     }
 
-    .summary { font-size: 1.03rem; color: #475467; }
+    .summary {
+      font-size: 1.03rem;
+      color: #475467;
+    }
 
     .skills {
       display: grid;
@@ -170,7 +189,10 @@
       font-size: 1rem;
     }
 
-    .skill-card p { margin: 0; color: var(--muted); }
+    .skill-card p {
+      margin: 0;
+      color: var(--muted);
+    }
 
     .projects {
       display: grid;
@@ -188,9 +210,15 @@
       box-shadow: var(--shadow);
     }
 
-    .project h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .project h3 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+    }
 
-    .project p { color: var(--muted); margin: 0 0 18px; }
+    .project p {
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
 
     .project a {
       margin-top: auto;
@@ -198,18 +226,26 @@
       font-weight: 700;
     }
 
-    .project a:hover { color: var(--accent-dark); }
+    .project a:hover {
+      color: var(--accent-dark);
+    }
 
     .timeline {
       border-left: 3px solid #bfdbfe;
       padding-left: 24px;
     }
 
-    .timeline-item { margin-bottom: 28px; }
+    .timeline-item {
+      margin-bottom: 28px;
+    }
 
-    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
 
-    .timeline-item h3 { margin: 0; }
+    .timeline-item h3 {
+      margin: 0;
+    }
 
     .timeline-item .date {
       color: var(--accent);
@@ -217,7 +253,9 @@
       font-size: 0.9rem;
     }
 
-    .timeline-item p { color: var(--muted); }
+    .timeline-item p {
+      color: var(--muted);
+    }
 
     .timeline-item ul {
       color: #475467;
@@ -230,20 +268,57 @@
       gap: 18px;
     }
 
-    .education h3 { margin: 0 0 6px; }
+    .education h3 {
+      margin: 0 0 6px;
+    }
 
-    .education p { margin: 4px 0; color: var(--muted); }
+    .education p {
+      margin: 4px 0;
+      color: var(--muted);
+    }
 
     .certifications {
       display: grid;
-      gap: 12px;
+      gap: 14px;
     }
 
     .cert {
-      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 24px;
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 12px;
+      border-radius: 14px;
+      transition: 0.2s;
+    }
+
+    .cert:hover {
+      border-color: #93c5fd;
+      transform: translateY(-2px);
+    }
+
+    .cert h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+    }
+
+    .cert p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .cert a {
+      flex-shrink: 0;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .cert a:hover {
+      color: var(--accent-dark);
     }
 
     footer {
@@ -253,24 +328,43 @@
       padding: 28px 16px;
     }
 
-    footer a { color: #93c5fd; }
+    footer a {
+      color: #93c5fd;
+    }
 
-    @media (max-width: 700px) {
-      header { padding: 48px 0; }
-      .hero { flex-direction: column; align-items: flex-start; }
-      .profile-box { width: 100%; }
-      .card { padding: 20px; }
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .profile-box {
+        width: 100%;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .cert {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <div class="container hero">
       <div>
         <div class="eyebrow">Portfolio & Resume</div>
+
         <h1>Devara Sai Ganesh</h1>
+
         <h2>Data Analyst & ML Associate</h2>
+
         <p>
           Python-driven data analysis, machine learning, and scalable database
           architectures. Passionate about transforming complex datasets into
@@ -278,9 +372,24 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:devarasaiganesh12@gmail.com">Contact Me</a>
-          <a class="btn btn-outline" href="https://github.com/DEVARASAIGANESH29" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-outline" href="https://www.linkedin.com/in/devara-sai-ganesh/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-primary"
+             href="mailto:devarasaiganesh12@gmail.com">
+            Contact Me
+          </a>
+
+          <a class="btn btn-outline"
+             href="https://github.com/DEVARASAIGANESH29"
+             target="_blank"
+             rel="noopener">
+            GitHub
+          </a>
+
+          <a class="btn btn-outline"
+             href="https://www.linkedin.com/in/devara-sai-ganesh/"
+             target="_blank"
+             rel="noopener">
+            LinkedIn
+          </a>
         </div>
       </div>
 
@@ -295,6 +404,7 @@
 
     <section>
       <h2 class="section-title">About Me</h2>
+
       <div class="card summary">
         Rigorous Data Analyst and ML Associate specializing in Python-driven
         Exploratory Data Analysis (EDA) and scalable database architectures.
@@ -307,36 +417,45 @@
 
     <section>
       <h2 class="section-title">Technical Skills</h2>
+
       <div class="skills">
+
         <div class="skill-card">
           <h3>Programming Languages</h3>
           <p>Python, C++, SQL, Java (Basic)</p>
         </div>
+
         <div class="skill-card">
           <h3>Libraries & Frameworks</h3>
           <p>Pandas, NumPy, Scikit-learn, TensorFlow (Basic)</p>
         </div>
+
         <div class="skill-card">
           <h3>Database & Cloud</h3>
           <p>MySQL, MongoDB, Cloudinary, REST APIs</p>
         </div>
+
         <div class="skill-card">
           <h3>Data Analysis & ML</h3>
           <p>Data preprocessing, EDA, classification, regression, clustering, NLP</p>
         </div>
+
         <div class="skill-card">
           <h3>Visualization & BI</h3>
           <p>Plotly, Excel, Power BI, Matplotlib, Seaborn</p>
         </div>
+
         <div class="skill-card">
           <h3>Development Tools</h3>
           <p>Git, GitHub, VS Code, Jupyter Notebook, Google Colab</p>
         </div>
+
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Featured Projects</h2>
+
       <div class="projects">
 
         <article class="project">
@@ -345,7 +464,11 @@
             Audio denoising and transcription engine using cloud-hosted audio,
             AI inference pipelines, and scalable media management.
           </p>
-          <a href="https://www.clearwaveai.in" target="_blank" rel="noopener">View Live Project →</a>
+          <a href="https://www.clearwaveai.in"
+             target="_blank"
+             rel="noopener">
+            View Live Project →
+          </a>
         </article>
 
         <article class="project">
@@ -354,7 +477,11 @@
             Python-based EDA and visualization pipeline analyzing ball-by-ball
             T20 cricket data with interactive player profiling charts.
           </p>
-          <a href="https://github.com/DEVARASAIGANESH29/IPL_BATTER_INTENT_ANALYSIS" target="_blank" rel="noopener">View Repository →</a>
+          <a href="https://github.com/DEVARASAIGANESH29/IPL_BATTER_INTENT_ANALYSIS"
+             target="_blank"
+             rel="noopener">
+            View Repository →
+          </a>
         </article>
 
         <article class="project">
@@ -363,7 +490,11 @@
             SQL architecture and automated workflows for financial transaction
             analysis, compliance risks, and anomaly detection.
           </p>
-          <a href="https://github.com/DEVARASAIGANESH29/fintech-database-architecture" target="_blank" rel="noopener">View Repository →</a>
+          <a href="https://github.com/DEVARASAIGANESH29/fintech-database-architecture"
+             target="_blank"
+             rel="noopener">
+            View Repository →
+          </a>
         </article>
 
         <article class="project">
@@ -372,7 +503,11 @@
             Machine learning project involving data cleaning, preprocessing,
             EDA, and model evaluation using Scikit-learn.
           </p>
-          <a href="https://github.com/DEVARASAIGANESH29/co2-emission-ml-project" target="_blank" rel="noopener">View Repository →</a>
+          <a href="https://github.com/DEVARASAIGANESH29/co2-emission-ml-project"
+             target="_blank"
+             rel="noopener">
+            View Repository →
+          </a>
         </article>
 
       </div>
@@ -380,11 +515,16 @@
 
     <section>
       <h2 class="section-title">Experience</h2>
+
       <div class="card timeline">
+
         <div class="timeline-item">
           <div class="date">May 2025 – July 2025</div>
+
           <h3>AI & Machine Learning Intern</h3>
+
           <strong>Opentab Innovations Pvt. Ltd. · India</strong>
+
           <ul>
             <li>Processed and analyzed real-world datasets using Python, NumPy, and Pandas.</li>
             <li>Performed data cleaning, feature selection, and Exploratory Data Analysis.</li>
@@ -393,33 +533,100 @@
             <li>Collaborated using Git and GitHub in a team environment.</li>
           </ul>
         </div>
+
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Education</h2>
+
       <div class="education">
+
         <div class="card">
           <h3>Aditya University, Surampalem</h3>
           <p><strong>B.Tech in Computer Science & Engineering</strong></p>
-          <p>Graduated: May 2026 · CGPA: 7.99/10</p>
+          <p>Graduated: 3 May 2026 · CGPA: 7.99/10</p>
         </div>
+
         <div class="card">
           <h3>Sri Chaitanya Junior College</h3>
           <p><strong>MPC</strong></p>
           <p>August 2020 – May 2022 · Percentage: 67.3%</p>
         </div>
+
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Certifications</h2>
+
       <div class="certifications">
-        <div class="cert">OCI 2025 Certified Generative AI Professional — Oracle</div>
-        <div class="cert">Python — Kaggle Learn</div>
-        <div class="cert">Introduction to Python Programming (AD141) — Red Hat</div>
-        <div class="cert">PCAP: Programming Essentials in Python — Cisco / OpenEDG</div>
-        <div class="cert">Introduction to Data Science — Cisco Networking Academy</div>
+
+        <div class="cert">
+          <div>
+            <h3>OCI 2025 Certified Generative AI Professional</h3>
+            <p>Oracle · September 2025</p>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1dl8BYjCRGCv4o9N-0T42a54kwbv6mEMJ/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            View Certificate →
+          </a>
+        </div>
+
+        <div class="cert">
+          <div>
+            <h3>Python</h3>
+            <p>Kaggle Learn · March 2025</p>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1rliL3CHNfpdj3BkR_l1i7Z77vsfNN_-i/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            View Certificate →
+          </a>
+        </div>
+
+        <div class="cert">
+          <div>
+            <h3>Introduction to Python Programming (AD141)</h3>
+            <p>Red Hat · May 2023</p>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1ZuZYhj8iWVknSorOOaNkFQP1D9DrTU6K/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            View Certificate →
+          </a>
+        </div>
+
+        <div class="cert">
+          <div>
+            <h3>PCAP: Programming Essentials in Python</h3>
+            <p>Cisco / OpenEDG · May 2023</p>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1MhNGR6uCwDm39G8y84cWP3ARH9uhQ6O5/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            View Certificate →
+          </a>
+        </div>
+
+        <div class="cert">
+          <div>
+            <h3>Introduction to Data Science</h3>
+            <p>Cisco Networking Academy</p>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1Saq-Bqk1qMtdybtWpKFi9HZmrPkz2Ewn/view?usp=drive_link"
+             target="_blank"
+             rel="noopener">
+            View Certificate →
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -427,8 +634,11 @@
 
   <footer>
     <p>© 2026 Devara Sai Ganesh. Built with HTML & CSS.</p>
+
     <p>
-      <a href="mailto:devarasaiganesh12@gmail.com">devarasaiganesh12@gmail.com</a>
+      <a href="mailto:devarasaiganesh12@gmail.com">
+        devarasaiganesh12@gmail.com
+      </a>
       · 8121670284
     </p>
   </footer>
